@@ -3,13 +3,13 @@ import { Formik } from 'formik'
 import * as Yup from 'yup'
 import PropTypes from 'prop-types'
 
-// import AppCoreModule from '../../../core/index'
+import AppCoreModule from '../../../core/index'
 import AppLogger from '../../../commons/logger/AppLogger'
 import withUserAddStyle from '../styles/withUserAddStyle'
 
 
 // button
-// const { Button } = AppCoreModule
+const { Button } = AppCoreModule
 
 const UserSchema = Yup.object().shape({
   first_name: Yup.string()
@@ -119,13 +119,14 @@ const UserAddForm = ({ className }) => (
               <div className="user-submit-error-block">{errors.password_confirmation}</div>
             }
             <div className="user-submit-block">
-              <button
+              <Button
                 className="user-submit-button"
                 type="submit"
                 disabled={isSubmitting}
+                primary
               >
                 Submit
-              </button>
+              </Button>
             </div>
           </form>
         )}
