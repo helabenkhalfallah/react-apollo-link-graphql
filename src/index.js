@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import dotenv from 'dotenv'
+import 'react-table/react-table.css'
 import './index.css'
 import registerServiceWorker from './registerServiceWorker'
 import AppLogger from './commons/logger/AppLogger'

@@ -4,7 +4,8 @@ const withUserAddStyle = WrappedComponent => styled(WrappedComponent)`
   width : 90%;
   margin : 0;
   padding : 0;
-  text-align : center;
+  text-align : left;
+  color: black;
   .user-add-form{
     display: block;
     width : 90%;

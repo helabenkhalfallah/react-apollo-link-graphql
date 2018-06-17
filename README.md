@@ -65,3 +65,6 @@ yarn add formik
 
 13. add yup validation
 yarn add yup 
+
+14. add react-table to enhance list display
+yarn add react-table

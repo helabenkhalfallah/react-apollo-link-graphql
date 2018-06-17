@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import AppLogger from '../../../commons/logger/AppLogger'
 import UserAddForm from '../components/UserAddForm'
 
@@ -7,7 +7,7 @@ import UserAddForm from '../components/UserAddForm'
 class UserAddPage extends Component {
   // propsType (validation)
   static propTypes = {
-
+    history: PropTypes.object.isRequired,
   }
 
   // default props
@@ -24,6 +24,11 @@ class UserAddPage extends Component {
   componentDidMount() {
   }
 
+  // on user add success
+  onUserAddSuccess = () => {
+    // pop to user list
+    this.props.history.goBack()
+  }
 
   // render
   render() {
@@ -33,7 +38,7 @@ class UserAddPage extends Component {
     // render page
     return (
       <Fragment>
-        <UserAddForm />
+        <UserAddForm onUserAddSuccess={this.onUserAddSuccess} />
       </Fragment >
     )
   }

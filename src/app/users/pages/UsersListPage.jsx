@@ -8,6 +8,7 @@ class UsersListPage extends Component {
   // propsType (validation)
   static propTypes = {
     history: PropTypes.object.isRequired,
+    data: PropTypes.object.isRequired,
   }
 
   // default props
@@ -28,7 +29,7 @@ class UsersListPage extends Component {
   onUserAddClick = (event) => {
     if (event) {
       AppLogger.info('UserListPage add user event : ', event)
-      // fetch user
+      // add user
       this.props.history.push({
         pathname: '/user-add',
         search: null,
