@@ -59,3 +59,9 @@ yarn add react-router-dom
 yarn add apollo-boost react-apollo graphql-tag graphql
 
 -------------- Settings end --------------
+
+12. add formik for user form and apollo mutation :
+yarn add formik 
+
+13. add yup validation
+yarn add yup 
