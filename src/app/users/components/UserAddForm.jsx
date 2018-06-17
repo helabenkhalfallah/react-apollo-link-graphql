@@ -123,7 +123,7 @@ const UserAddForm = ({ className }) => (
                 className="user-submit-button"
                 type="submit"
                 disabled={isSubmitting}
-                primary
+                secondary
               >
                 Submit
               </Button>
