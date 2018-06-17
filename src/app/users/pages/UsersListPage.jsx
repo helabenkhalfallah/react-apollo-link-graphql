@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-// import PropTypes from 'prop-types'
 import AppLogger from '../../../commons/logger/AppLogger'
-
+import UsersList from '../components/UsersList'
 
 class UsersListPage extends Component {
   // propsType (validation)
@@ -17,13 +16,11 @@ class UsersListPage extends Component {
   // component life cycle
   componentDidMount() { }
 
-  // render the appropriate button
-  // case type :
-  // primary, secondary or default
+  // render
   render() {
     // log
     AppLogger.info('Button props : ', this.props)
-    return <h1>Hello, list hela!</h1>
+    return <UsersList />
   }
 }
 
