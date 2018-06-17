@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
 import { Query } from 'react-apollo'
-
 import AppLogger from '../../../commons/logger/AppLogger'
 import AppCoreModule from '../../../core/index'
 import UsersListQueries from '../graphql/UsersListQueries'
